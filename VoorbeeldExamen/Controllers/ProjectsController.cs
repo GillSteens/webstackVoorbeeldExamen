@@ -20,6 +20,12 @@ namespace VoorbeeldExamen.Controllers
             return View(db.Projects.ToList());
         }
 
+        // GET: Projects
+        public ActionResult Projecten()
+        {
+            return View(db.Projects.ToList());
+        }
+
         // GET: Projects/Details/5
         public ActionResult Details(string id)
         {

@@ -39,7 +39,7 @@ namespace VoorbeeldExamen.Controllers
         // GET: Personeels/Create
         public ActionResult Create()
         {
-            ViewBag.IdVestiging = new SelectList(db.Vestigings, "Id", "Naam");
+            ViewBag.IdVestiging = new SelectList(db.Personeels, "Id", "Naam");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace VoorbeeldExamen.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.IdVestiging = new SelectList(db.Vestigings, "Id", "Naam", personeel.IdVestiging);
+            ViewBag.IdVestiging = new SelectList(db.Personeels, "Id", "Naam", personeel.IdVestiging);
             return View(personeel);
         }
 
@@ -73,7 +73,7 @@ namespace VoorbeeldExamen.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.IdVestiging = new SelectList(db.Vestigings, "Id", "Naam", personeel.IdVestiging);
+            ViewBag.IdVestiging = new SelectList(db.Personeels, "Id", "Naam", personeel.IdVestiging);
             return View(personeel);
         }
 
@@ -90,7 +90,7 @@ namespace VoorbeeldExamen.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.IdVestiging = new SelectList(db.Vestigings, "Id", "Naam", personeel.IdVestiging);
+            ViewBag.IdVestiging = new SelectList(db.Personeels, "Id", "Naam", personeel.IdVestiging);
             return View(personeel);
         }
 

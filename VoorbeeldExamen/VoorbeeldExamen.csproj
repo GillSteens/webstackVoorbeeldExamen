@@ -154,6 +154,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FunctiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PersoneelsController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
@@ -164,6 +165,7 @@
     <Compile Include="Models\Personeel.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\ProjValidationAttribute.cs" />
+    <Compile Include="Models\Seeder.cs" />
     <Compile Include="Models\VBEXDBContext.cs" />
     <Compile Include="Models\Vestiging.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -222,6 +224,9 @@
     <Content Include="Views\Vestigings\Details.cshtml" />
     <Content Include="Views\Vestigings\Edit.cshtml" />
     <Content Include="Views\Vestigings\Index.cshtml" />
+    <Content Include="Views\Projects\Projecten.cshtml" />
+    <Content Include="Views\Functies\KoppelPersoneel.cshtml" />
+    <Content Include="Views\Functies\ProjectAanmaken.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

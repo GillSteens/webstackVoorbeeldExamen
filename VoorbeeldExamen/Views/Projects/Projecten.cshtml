@@ -1,0 +1,31 @@
+﻿
+@model IEnumerable<VoorbeeldExamen.Models.Project>
+
+@{
+    ViewBag.Title = "Projecten";
+}
+
+<h2>Projecten</h2>
+
+
+
+
+@foreach (var item in Model)
+{
+<div>
+    <h3>@Html.DisplayFor(modelItem => item.ProjectNaam)</h3>
+
+    <p>@Html.DisplayFor(modelItem => item.Status)</p>
+
+    <p>@Html.DisplayFor(modelItem => item.HuidigBudget)</p>
+
+    @foreach (var i in item.ProjectLeden)
+    {
+        <p>@i.Achternaam, @i.Voornaam</p>
+    }
+
+    <p>Aantal projectleden: @item.ProjectLeden.Count()</p>
+    <hr />
+</div>
+}
+    
