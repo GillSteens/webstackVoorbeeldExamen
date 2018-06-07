@@ -12,7 +12,7 @@ namespace VoorbeeldExamen
     {
         protected void Application_Start()
         {
-            Application["Sessions"] = 1;
+            Application["Sessions"] = -1;
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
